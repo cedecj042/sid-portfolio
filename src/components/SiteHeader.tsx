@@ -12,7 +12,7 @@ export function SiteHeader() {
 
   return (
     <header className={scrolled ? 'site-header is-scrolled' : 'site-header'}>
-      <a className="brand" href="#top" aria-label="Cedric, home">C<span>J</span></a>
+      <a className="brand" href="#top" aria-label="Cedric, home">C<span>E</span><span>O</span></a>
       <nav aria-label="Primary navigation">
         <a href="#story">Story</a>
         <a href="#work">Work</a>

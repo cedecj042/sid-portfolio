@@ -3,6 +3,7 @@ import { Hero } from './components/Hero'
 import { ProjectsSection } from './components/ProjectsSection'
 import { SiteFooter } from './components/SiteFooter'
 import { SiteHeader } from './components/SiteHeader'
+import { TechStack } from './components/TechStack'
 import './App.css'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <main id="top">
         <Hero />
         <CareerStory />
+        <TechStack />
         <ProjectsSection />
       </main>
       <SiteFooter />
