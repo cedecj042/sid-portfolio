@@ -4,7 +4,7 @@ export const projects: Project[] = [
   {
     number: '01',
     title: 'TopIT',
-    description: 'A personalized TOPCIT reviewer that combines retrieval-augmented generation with computerized adaptive testing to create a smarter, more focused study experience.',
+    description: 'A TOPCIT reviewer that uses AI to create questions and adjust each test based on the student’s performance.',
     image: '/TOPIT.jpg',
     imageAlt: 'TopIT reviewer system shown on a laptop',
     tags: ['Laravel', 'React', 'FastAPI', 'RAG'],
@@ -17,7 +17,7 @@ export const projects: Project[] = [
   {
     number: '02',
     title: 'SideQuest Pickleball',
-    description: 'A lively court discovery and booking experience built to help players spend less time planning and more time playing.',
+    description: 'A website where players can view pickleball courts, check schedules, and make a booking.',
     image: '/sidequest.png',
     imageAlt: 'SideQuest Pickleball court booking website',
     tags: ['Web Design', 'Development', 'Booking'],
@@ -27,7 +27,7 @@ export const projects: Project[] = [
   {
     number: '03',
     title: 'Readingful',
-    description: 'A playful reading platform for kids, designed to turn practice into an inviting, story-led experience that feels easy to return to.',
+    description: 'A reading practice platform for children with stories, activities, and tools for students and administrators.',
     image: '/readingful.png',
     imageAlt: 'Readingful reading practice website for kids',
     tags: ['Education', 'Product Design', 'Development'],
@@ -37,7 +37,7 @@ export const projects: Project[] = [
   {
     number: '04',
     title: 'BizExpense',
-    description: 'A straightforward expense tracker for small businesses, with reporting and analytics that make day-to-day financial management clearer.',
+    description: 'An expense tracker for small businesses with reports and charts that make expenses easier to understand.',
     image: '/BizExpense.jpg',
     imageAlt: 'BizExpense business expense tracking application',
     tags: ['Expense Tracking', 'Analytics', 'Full Stack'],

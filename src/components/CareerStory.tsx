@@ -1,8 +1,8 @@
 const milestones = [
-  { year: '2019', title: 'Learning through design', description: 'My career began in UI/UX at GoodApps, translating user needs into wireframes, interfaces, and visual systems.' },
-  { year: '2021', title: 'Designing while studying', description: 'I began my Computer Science degree while continuing part-time design work—bringing real product experience into the classroom.' },
-  { year: '2025', title: 'Crossing into development', description: 'An internship and an AI-focused thesis made the shift concrete: from designing interfaces to building complete Laravel and React applications.' },
-  { year: 'Now', title: 'Owning the full product', description: 'Today I work across web and mobile—from APIs and databases to production interfaces, deployment, code review, and client collaboration.' },
+  { year: '2019', role: 'UI and UX Designer', place: 'GoodApps Inc.', description: 'I started my career by creating wireframes, app screens, and visual designs based on user and business needs.' },
+  { year: '2021', role: 'Computer Science Student', place: 'University of San Jose Recoletos', description: 'I studied Computer Science with a major in AI and Web Development. I also continued working part time as a UI and UX designer.' },
+  { year: '2025', role: 'Full Stack Developer', place: 'Internship and thesis work', description: 'I moved into development through my internship and TopIT thesis. I started building complete apps with Laravel, React, Python, and AI tools.' },
+  { year: 'Now', role: 'Full Stack and Mobile Developer', place: 'Production client work', description: 'I build and maintain web and mobile apps. I work on interfaces, APIs, databases, deployments, code reviews, and client updates.' },
 ]
 
 export function CareerStory() {
@@ -11,8 +11,8 @@ export function CareerStory() {
       <div className="story-heading">
         <p className="story-label">My path</p>
         <div>
-          <h2 id="story-title">Design was the start.<br /><em>Building became the next step.</em></h2>
-          <p className="story-lead">I started by shaping how digital products look and feel. Learning to build them turned that visual foundation into a full-stack practice.</p>
+          <h2 id="story-title">From design to<br /><em>full stack development.</em></h2>
+          <p className="story-lead">I started as a UI and UX designer. While studying Computer Science, I learned how to build the products I was designing. Today, I work across the full product.</p>
           <a className="resume-download" href="/Cedric-Oporto-Resume.pdf" download>Download my résumé <span aria-hidden="true">↓</span></a>
         </div>
       </div>
@@ -20,7 +20,12 @@ export function CareerStory() {
         {milestones.map((milestone) => (
           <li key={milestone.year}>
             <span className="timeline-year">{milestone.year}</span>
-            <div><h3>{milestone.title}</h3><p>{milestone.description}</p></div>
+            <span className="timeline-track" aria-hidden="true"><span /></span>
+            <div className="timeline-content">
+              <p className="timeline-place">{milestone.place}</p>
+              <h3>{milestone.role}</h3>
+              <p>{milestone.description}</p>
+            </div>
           </li>
         ))}
       </ol>
