@@ -10,6 +10,7 @@ const publicAssets = [
   'sidequest.png',
   'readingful.png',
   'BizExpense.jpg',
+  'Cedric-Oporto-Resume.pdf',
   'fonts/Poppins/Poppins-Regular.ttf',
   'fonts/Poppins/Poppins-SemiBold.ttf',
   'fonts/Inter/Inter-VariableFont_opsz,wght.ttf',
@@ -17,7 +18,8 @@ const publicAssets = [
 
 // https://vite.dev/config/
 export default defineConfig({
-  publicDir: false,
+  publicDir: 'public',
+  build: { copyPublicDir: false },
   plugins: [
     react(),
     babel({ presets: [reactCompilerPreset()] }),

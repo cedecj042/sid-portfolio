@@ -83,7 +83,7 @@ function App() {
     <div className="site-shell">
       <header className={scrolled ? 'site-header is-scrolled' : 'site-header'}>
         <a className="brand" href="#top" aria-label="Cedric, home">C<span>J</span></a>
-        <nav aria-label="Primary navigation"><a href="#work">Work</a><a href="https://github.com/cedecj042" target="_blank" rel="noreferrer">GitHub</a></nav>
+        <nav aria-label="Primary navigation"><a href="#story">Story</a><a href="#work">Work</a><a className="resume-nav" href="/Cedric-Oporto-Resume.pdf" download>Résumé ↓</a></nav>
       </header>
       <main id="top">
         <section className="intro" aria-labelledby="intro-title">
@@ -93,6 +93,34 @@ function App() {
             <p>I’m Cedric, a developer focused on thoughtful web experiences—from intelligent learning tools to platforms people use every day.</p>
             <button type="button" onClick={() => projectsRef.current?.scrollIntoView({ behavior: 'smooth' })}>Explore selected work <span aria-hidden="true">↓</span></button>
           </div>
+        </section>
+        <section className="story" id="story" aria-labelledby="story-title">
+          <div className="story-heading">
+            <p className="story-label">My path</p>
+            <div>
+              <h2 id="story-title">Design was the start.<br /><em>Building became the next step.</em></h2>
+              <p className="story-lead">I started by shaping how digital products look and feel. Learning to build them turned that visual foundation into a full-stack practice.</p>
+              <a className="resume-download" href="/Cedric-Oporto-Resume.pdf" download>Download my résumé <span aria-hidden="true">↓</span></a>
+            </div>
+          </div>
+          <ol className="timeline">
+            <li>
+              <span className="timeline-year">2019</span>
+              <div><h3>Learning through design</h3><p>My career began in UI/UX at GoodApps, translating user needs into wireframes, interfaces, and visual systems.</p></div>
+            </li>
+            <li>
+              <span className="timeline-year">2021</span>
+              <div><h3>Designing while studying</h3><p>I began my Computer Science degree while continuing part-time design work—bringing real product experience into the classroom.</p></div>
+            </li>
+            <li>
+              <span className="timeline-year">2025</span>
+              <div><h3>Crossing into development</h3><p>An internship and an AI-focused thesis made the shift concrete: from designing interfaces to building complete Laravel and React applications.</p></div>
+            </li>
+            <li>
+              <span className="timeline-year">Now</span>
+              <div><h3>Owning the full product</h3><p>Today I work across web and mobile—from APIs and databases to production interfaces, deployment, code review, and client collaboration.</p></div>
+            </li>
+          </ol>
         </section>
         <section className="work" id="work" ref={projectsRef} aria-labelledby="work-title">
           <div className="section-heading"><p>Selected work</p><h2 id="work-title">Four projects,<br />built with purpose.</h2></div>
