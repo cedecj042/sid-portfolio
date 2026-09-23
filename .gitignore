@@ -11,6 +11,16 @@ node_modules
 dist
 dist-ssr
 *.local
+.sites-runtime
+public/TOPIT-FINAL.mp4
+public/fonts/Inter/static/
+public/fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf
+public/fonts/Inter/OFL.txt
+public/fonts/Inter/README.txt
+public/fonts/Poppins/*.ttf
+!public/fonts/Poppins/Poppins-Regular.ttf
+!public/fonts/Poppins/Poppins-SemiBold.ttf
+public/fonts/Poppins/OFL.txt
 
 # Editor directories and files
 .vscode/*
