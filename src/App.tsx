@@ -1,5 +1,6 @@
 import { CareerStory } from './components/CareerStory'
 import { Hero } from './components/Hero'
+import { OtherProjects } from './components/OtherProjects'
 import { ProjectsSection } from './components/ProjectsSection'
 import { SiteFooter } from './components/SiteFooter'
 import { SiteHeader } from './components/SiteHeader'
@@ -15,6 +16,7 @@ function App() {
         <CareerStory />
         <TechStack />
         <ProjectsSection />
+        <OtherProjects />
       </main>
       <SiteFooter />
     </div>
